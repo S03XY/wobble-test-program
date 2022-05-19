@@ -1,0 +1,19 @@
+[package]
+name = "wobble-synth"
+version = "1.0.0"
+description = "Buy Random Songs from Wobble-Synth"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "wobble_synth"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.24.2"

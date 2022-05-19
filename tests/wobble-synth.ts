@@ -27,7 +27,10 @@ describe("wobble-synth_program", () => {
   })
 
   it("buy_song", async () => {
-    const allUsers = await user0Program.account.user0.all()
+    const allUsers = await user0Program.account.user0.all([{memcmp: {
+      offset: 8,
+      bytes: provider.wallet.publicKey.toBase58(),
+    }}])
     const currUser = allUsers[0]
     await user0Program.rpc.buySong({
       accounts: {

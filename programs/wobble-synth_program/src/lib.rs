@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("FfkMh4zG6jjJsq9h6RW8weSXwNqwa8x2jHcZNfKYU5iT");
+declare_id!("54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB");
 
 #[program]
 pub mod wobble_synth {
@@ -45,8 +45,8 @@ pub struct User0 {
 }
 
 const DISCRIMINATOR_LENGTH: usize = 8;
-const SONGS_COUNT_LENGTH: usize = 2; // u16 == 2 bytes
 const PUBLIC_KEY_LENGTH: usize = 32;
+const SONGS_COUNT_LENGTH: usize = 2; // u16 == 2 bytes
 impl User0 {
     const LEN: usize = DISCRIMINATOR_LENGTH + PUBLIC_KEY_LENGTH + SONGS_COUNT_LENGTH;
 }

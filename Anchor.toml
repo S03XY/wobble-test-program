@@ -1,7 +1,7 @@
 [features]
 seeds = false
 [programs.localnet]
-wobble_synth = "FfkMh4zG6jjJsq9h6RW8weSXwNqwa8x2jHcZNfKYU5iT"
+wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
 
 [registry]
 url = "https://anchor.projectserum.com"

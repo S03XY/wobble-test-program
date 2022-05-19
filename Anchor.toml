@@ -2,12 +2,16 @@
 seeds = false
 [programs.localnet]
 wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
+[programs.devnet]
+wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
+[programs.mainnet]
+wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/home/mahesh/.config/solana/id.json"
 
 [scripts]

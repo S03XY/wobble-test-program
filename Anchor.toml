@@ -1,9 +1,9 @@
 [features]
 seeds = false
 [programs.localnet]
-wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
+wobble_synth = "8ptgXekj3hdRqdXvrW8cr55ZoMNLeyqa7Xp13XAAUMBQ"
 [programs.devnet]
-wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
+wobble_synth = "8ptgXekj3hdRqdXvrW8cr55ZoMNLeyqa7Xp13XAAUMBQ"
 [programs.mainnet]
 wobble_synth = "54mzQZxsFhqshuPkQhgHU8EBKTnLMtdv51Lpx8Cj4YMB"
 
@@ -12,7 +12,7 @@ url = "https://anchor.projectserum.com"
 
 [provider]
 cluster = "devnet"
-wallet = "/home/mahesh/.config/solana/id.json"
+wallet = "/home/shashank/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

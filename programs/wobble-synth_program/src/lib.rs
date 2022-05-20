@@ -15,8 +15,6 @@ const BUYER_PREFIX: &str = "buyer";
 #[program]
 pub mod wobble_synth {
 
-
-
     use super::*;
 
     pub fn buy_first_song(ctx: Context<CreateUser0>) -> Result<()> {
@@ -99,7 +97,7 @@ pub mod wobble_synth {
 
 #[derive(Accounts)]
 pub struct CreateUser0<'info> {
-    #[account(init,payer=user,seeds=[BUYER_PREFIX.as_bytes()],bump, space=User0::LEN)]
+    #[account(init,payer=user,seeds=[BUYER_PREFIX.as_bytes(),user.key().as_ref(),tokenmint.key().as_ref()],bump, space=User0::LEN)]
     pub user0: Account<'info, User0>,
     #[account(mut)]
     pub user: Signer<'info>,
